@@ -11,7 +11,7 @@ const Register = ({ submitForm }) => {
     return (
         <div className="form-content-right">
             <form className="form" onSubmit={handleSubmit} noValidate>
-                <h1>Register your account by filling your information below</h1>
+                <h1>Register your account below</h1>
                 <div className="form-inputs">
                     <label htmlFor="fullname" className="form-label">
                         Full Name
