@@ -1,9 +1,10 @@
 import React from 'react';
 import useForm from "../useForm";
+import validate from "../validate";
 
 const Register = () => {
 
-    const { handleChange, handleSubmit, values } = useForm();
+    const { handleChange, handleSubmit, values } = useForm(validate);
 
     return (
         <div className="form-content-right">
