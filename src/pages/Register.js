@@ -2,9 +2,9 @@ import React from 'react';
 import useForm from "../useForm";
 import validate from "../validate";
 
-const Register = () => {
+const Register = ({ }) => {
 
-    const { handleChange, handleSubmit, values } = useForm(validate);
+    const { handleChange, handleSubmit, values, errors } = useForm(validate);
 
     return (
         <div className="form-content-right">
@@ -23,6 +23,7 @@ const Register = () => {
                         value={values.fullname}
                         onChange={handleChange} 
                     />
+                    {errors.fullname && <p>{errors.fullname}</p>}
                 </div>
                 <div className="form-inputs">
                     <label htmlFor="email" className="form-label">
@@ -37,6 +38,7 @@ const Register = () => {
                         value={values.email}
                         onChange={handleChange}
                     />
+                    {errors.email && <p>{errors.email}</p>}
                 </div>
                 <div className="form-inputs">
                     <label htmlFor="password" className="form-label">
@@ -51,6 +53,7 @@ const Register = () => {
                         value={values.password}
                         onChange={handleChange} 
                     />
+                    {errors.password && <p>{errors.password}</p>}
                 </div>
                 <button 
                     type="submit" 
