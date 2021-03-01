@@ -4,9 +4,9 @@ import validate from "../validation";
 
 
 
-const Register = ({ }) => {
+const Register = ({ submitForm }) => {
 
-    const { handleChange, handleSubmit, values, errors } = useForm(validate);
+    const { handleChange, handleSubmit, values, errors } = useForm(submitForm, validate);
 
     return (
         <div className="form-content-right">
