@@ -1,6 +1,10 @@
 import React from 'react';
+import useForm from "../useForm";
 
 const Register = () => {
+
+    const { handleChange, values } = useForm();
+
     return (
         <div className="form-content-right">
             <form className="form">
@@ -29,6 +33,8 @@ const Register = () => {
                         name="email" 
                         className="form-input" 
                         placeholder="Enter your email" 
+                        value={values.email}
+                        onChange={handleChange}
                     />
                 </div>
                 <div className="form-inputs">
@@ -40,7 +46,9 @@ const Register = () => {
                         type="password" 
                         name="password" 
                         className="form-input" 
-                        placeholder="Enter your password" 
+                        placeholder="Enter your password"
+                        value={values.password}
+                        onChange={handleChange} 
                     />
                 </div>
                 <button 
