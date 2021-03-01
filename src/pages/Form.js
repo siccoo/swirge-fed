@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Register from "./Register";
 import Success from "./Success";
 
+import "./Form.css";
+
 import Swirge from "./../images/swirge-logo.png";
 
 const Form = () => {
