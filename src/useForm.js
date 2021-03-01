@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Success from "./pages/Success";
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
@@ -20,8 +21,9 @@ const useForm = (callback, validate) => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    setErrors(validate(values));
-    setIsSubmitting(true);
+    // setErrors(validate(values));
+    // setIsSubmitting(true);
+    <Success />
   };
 
 //   useEffect(
