@@ -3,11 +3,11 @@ import useForm from "../useForm";
 
 const Register = () => {
 
-    const { handleChange, values } = useForm();
+    const { handleChange, handleSubmit, values } = useForm();
 
     return (
         <div className="form-content-right">
-            <form className="form">
+            <form className="form" onSubmit={handleSubmit}>
                 <h1>Register your account by filling your information below</h1>
                 <div className="form-inputs">
                     <label htmlFor="fullname" className="form-label">

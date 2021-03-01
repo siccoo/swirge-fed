@@ -17,12 +17,12 @@ const useForm = (callback, validate) => {
     });
   };
 
-//   const handleSubmit = e => {
-//     e.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault();
 
-//     setErrors(validate(values));
-//     setIsSubmitting(true);
-//   };
+    // setErrors(validate(values));
+    // setIsSubmitting(true);
+  };
 
 //   useEffect(
 //     () => {
@@ -33,7 +33,7 @@ const useForm = (callback, validate) => {
 //     [errors]
 //   );
 
-  return { handleChange,  values };
+  return { handleChange, handleSubmit,  values };
 };
 
 export default useForm;
