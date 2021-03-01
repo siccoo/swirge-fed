@@ -1,6 +1,6 @@
 import React from 'react';
 import useForm from "../useForm";
-import validate from "../validate";
+import validate from "../validation";
 
 const Register = ({ }) => {
 
@@ -8,7 +8,7 @@ const Register = ({ }) => {
 
     return (
         <div className="form-content-right">
-            <form className="form" onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit} noValidate>
                 <h1>Register your account by filling your information below</h1>
                 <div className="form-inputs">
                     <label htmlFor="fullname" className="form-label">

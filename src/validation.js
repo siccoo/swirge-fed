@@ -1,4 +1,4 @@
-export default function validate(values) {
+const validation = (values) => {
     let errors = {};
 
     if (!values.fullname.trim()) {
@@ -19,3 +19,5 @@ export default function validate(values) {
 
     return errors;
 }
+
+export default validation;
