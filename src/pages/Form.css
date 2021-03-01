@@ -80,6 +80,7 @@
   .form-inputs {
     margin-bottom: 0.5rem;
     width: 80%;
+    text-align: left;
   }
   
   .form-inputs p {
