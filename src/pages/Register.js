@@ -2,6 +2,8 @@ import React from 'react';
 import useForm from "../useForm";
 import validate from "../validation";
 
+
+
 const Register = ({ }) => {
 
     const { handleChange, handleSubmit, values, errors } = useForm(validate);

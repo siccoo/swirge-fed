@@ -12,7 +12,7 @@ const validation = (values) => {
     }
 
     if (!values.password) {
-        errors.password = 'Password is required';
+        errors.password = 'Password required';
       } else if (values.password.length < 6) {
         errors.password = 'Password needs to be 6 characters or more';
     }
