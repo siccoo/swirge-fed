@@ -14,7 +14,9 @@ const Register = () => {
                         type="text" 
                         name="fullname" 
                         className="form-input" 
-                        placeholder="Enter your full name" 
+                        placeholder="Enter your full name"
+                        value={values.fullname}
+                        onChange={handleChange} 
                     />
                 </div>
                 <div className="form-inputs">
