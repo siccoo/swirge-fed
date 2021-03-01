@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Register = () => {
     return (
@@ -10,6 +10,7 @@ const Register = () => {
                         Full Name
                     </label>
                     <input 
+                        id="fullname"
                         type="text" 
                         name="fullname" 
                         className="form-input" 
@@ -20,27 +21,36 @@ const Register = () => {
                     <label htmlFor="email" className="form-label">
                         Email address
                     </label>
-                    <input 
+                    <input
+                        id="email" 
                         type="email" 
-                        name="fullname" 
+                        name="email" 
                         className="form-input" 
                         placeholder="Enter your email" 
                     />
                 </div>
                 <div className="form-inputs">
-                    <label htmlFor="fullname" className="form-label">
+                    <label htmlFor="password" className="form-label">
                         Password
                     </label>
                     <input 
+                        id="password"
                         type="password" 
-                        name="fullname" 
+                        name="password" 
                         className="form-input" 
                         placeholder="Enter your password" 
                     />
                 </div>
+                <button 
+                    type="submit" 
+                    className="form-input-btn"
+                >Sign up</button>
+                <span className='form-input-login'>
+                    Already have an account? Login <a href='#'>here</a>
+                </span>
             </form>
         </div>
     )
 }
 
-export default Register
+export default Register;
