@@ -7,11 +7,11 @@ import validate from "../validation";
 const Register = ({ submitForm }) => {
 
     const { handleChange, handleSubmit, values, errors } = useForm(submitForm, validate);
-    const onSubmit = (data) => console.log(data);
+//     const onSubmit = (data) => console.log(data);
 
     return (
         <div className="form-content-right">
-            <form className="form" onSubmit={handleSubmit(onSubmit)} noValidate autoComplete="off">
+            <form className="form" onSubmit={handleSubmit} noValidate>
                 <h1>Register your account below</h1>
                 <div className="form-inputs">
                     <label htmlFor="fullname" className="form-label">
